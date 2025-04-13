@@ -1,45 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+  <meta charset="UTF-8">
+  <title>جدول دراسة الصف التاسع</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to top right, #e0f7fa, #ffffff);
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
 
-        section {
-            padding: 2rem 0;
-        }
+    h2 {
+      text-align: center;
+      color: #006064;
+      margin-top: 60px;
+    }
 
-        section .container {
-            background-color: #fff;
-            padding: 2rem;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
 
-    </style>
+    th {
+      background-color: #00acc1;
+      color: white;
+      padding: 12px;
+      font-weight: bold;
+    }
+
+    td {
+      padding: 10px;
+      border: 1px solid #e0e0e0;
+      text-align: center;
+    }
+
+    tr:nth-child(even) td {
+      background-color: #f1f1f1;
+    }
+
+    tr:hover td {
+      background-color: #e0f7fa;
+    }
+
+    .phase-title {
+      background-color: #b2ebf2;
+      color: #004d40;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 20px;
+      margin-top: 50px;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+      table {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
 </head>
 <body>
-    <section id="about">
-        <div class="container">
-            <h2>Hello Mr. Younes Dalla</h2>
-            <p>I'm grateful to you for wanting to see my <a href="https://kinankassab.github.io/Scouts-Education/" target="_blank">project</a>.</p>
-        </div>
-    </section>
+
+  <div class="phase-title">المرحلة الأولى: مراجعة شاملة</div>
+  <table>
+    <tr>
+      <th>التاريخ</th>
+      <th>المادة</th>
+      <th>9:00 - 12:00</th>
+      <th>2:00 - 5:00</th>
+      <th>7:00 - 9:00</th>
+    </tr>
+    <!-- جدول المرحلة الأولى -->
+    <tr><td>17 نيسان</td><td>علوم</td><td>مراجعة الوحدة الأولى</td><td>مراجعة الوحدة الثانية</td><td>ملخصات وأسئلة</td></tr>
+    <tr><td>18 نيسان</td><td>علوم</td><td>الوحدة الثالثة</td><td>الوحدة الرابعة</td><td>حل نموذج</td></tr>
+    <tr><td>19 نيسان</td><td>علوم</td><td>الوحدة الخامسة</td><td>مراجعة عامة</td><td>أسئلة دورات</td></tr>
+    <tr><td>20 نيسان</td><td>علوم</td><td>أسئلة دورات</td><td>فيديوهات شرح</td><td>راحة</td></tr>
+    <tr><td>21 نيسان</td><td>علوم</td><td>مراجعة خفيفة</td><td>راحة</td><td>راحة</td></tr>
+    <tr><td>22 نيسان</td><td>اجتماعيات</td><td>جغرافيا - درسين</td><td>جغرافيا - درسين</td><td>حفظ المصطلحات</td></tr>
+    <tr><td>23 نيسان</td><td>اجتماعيات</td><td>تاريخ - درسين</td><td>تاريخ - درسين</td><td>خرائط وتمارين</td></tr>
+    <tr><td>24 نيسان</td><td>اجتماعيات</td><td>وطنية كاملة</td><td>حل أسئلة وطنية</td><td>مراجعة سريعة</td></tr>
+    <tr><td>25 نيسان</td><td>اجتماعيات</td><td>اختبار ذاتي</td><td>راحة</td><td>راحة</td></tr>
+    <tr><td>26 نيسان</td><td>رياضيات</td><td>جبر - معادلات</td><td>جبر - تمارين</td><td>أسئلة سابقة</td></tr>
+    <tr><td>27 نيسان</td><td>رياضيات</td><td>هندسة - نظري</td><td>هندسة - رسم</td><td>أسئلة دورات</td></tr>
+    <tr><td>28 نيسان</td><td>رياضيات</td><td>مراجعة مختلطة</td><td>نماذج كاملة</td><td>راحة</td></tr>
+    <tr><td>29 نيسان</td><td>رياضيات</td><td>اختبار شامل</td><td>راحة</td><td>راحة</td></tr>
+    <tr><td>30 نيسان</td><td>ديانة</td><td>فقه وعقيدة</td><td>أحاديث وآيات</td><td>مراجعة قصيرة</td></tr>
+    <tr><td>1 أيار</td><td>ديانة</td><td>حل أسئلة وحفظ</td><td>نماذج سريعة</td><td>راحة</td></tr>
+    <tr><td>2 أيار</td><td>إنكليزي</td><td>قواعد زمن الحاضر</td><td>قواعد زمن الماضي</td><td>تمارين كتاب</td></tr>
+    <tr><td>3 أيار</td><td>إنكليزي</td><td>نصوص + مفردات</td><td>تعابير جاهزة</td><td>مراجعة عامة</td></tr>
+    <tr><td>4 أيار</td><td>فرنسي</td><td>قواعد أساسية</td><td>نصوص + تعابير</td><td>تمارين كتاب</td></tr>
+    <tr><td>5 أيار</td><td>فرنسي</td><td>مراجعة عامة</td><td>أسئلة دورات</td><td>راحة</td></tr>
+    <tr><td>6 أيار</td><td>عربي</td><td>نصوص أدبية</td><td>قواعد لغوية</td><td>تعابير جاهزة</td></tr>
+    <tr><td>7 أيار</td><td>عربي</td><td>نصوص وظيفية</td><td>مطالعة واملاء</td><td>حل نماذج</td></tr>
+    <tr><td>8 أيار</td><td>عربي</td><td>تعابير متوقعة</td><td>مراجعة خفيفة</td><td>راحة</td></tr>
+    <tr><td>9 أيار</td><td>عربي</td><td>اختبار ذاتي</td><td>راحة</td><td>راحة</td></tr>
+  </table>
+
+  <div class="phase-title">المرحلة الثانية: مراجعة ثانية + أسئلة دورات</div>
+  <table>
+    <tr>
+      <th>التاريخ</th>
+      <th>المادة</th>
+      <th>9:00 - 12:00</th>
+      <th>2:00 - 5:00</th>
+      <th>7:00 - 9:00</th>
+    </tr>
+    <!-- جدول المرحلة الثانية -->
+    <tr><td>10 أيار</td><td>علوم</td><td>مفاهيم صعبة</td><td>أسئلة دورات</td><td>ملخصات</td></tr>
+    <tr><td>11 أيار</td><td>علوم</td><td>تطبيقات</td><td>نماذج امتحانية</td><td>راحة</td></tr>
+    <tr><td>12 أيار</td><td>اجتماعيات</td><td>جغرافيا</td><td>تاريخ</td><td>وطنية</td></tr>
+    <tr><td>13 أيار</td><td>اجتماعيات</td><td>أسئلة وزارية</td><td>نماذج شاملة</td><td>راحة</td></tr>
+    <tr><td>14 أيار</td><td>رياضيات</td><td>جبر</td><td>هندسة</td><td>شاملة</td></tr>
+    <tr><td>15 أيار</td><td>رياضيات</td><td>نموذج وزاري</td><td>مراجعة</td><td>راحة</td></tr>
+    <tr><td>16 أيار</td><td>ديانة</td><td>آيات + تفسير</td><td>أحاديث</td><td>سريعة</td></tr>
+    <tr><td>17 أيار</td><td>ديانة</td><td>نموذج امتحاني</td><td>حفظ نهائي</td><td>راحة</td></tr>
+    <tr><td>18 أيار</td><td>إنكليزي</td><td>قواعد شاملة</td><td>تعابير</td><td>أسئلة</td></tr>
+    <tr><td>19 أيار</td><td>إنكليزي</td><td>نصوص</td><td>نماذج</td><td>راحة</td></tr>
+    <tr><td>20 أيار</td><td>فرنسي</td><td>نصوص</td><td>تعابير</td><td>قواعد</td></tr>
+    <tr><td>21 أيار</td><td>فرنسي</td><td>نموذج كامل</td><td>مراجعة أخيرة</td><td>راحة</td></tr>
+    <tr><td>22 أيار</td><td>عربي</td><td>نصوص</td><td>إملاء + تعابير</td><td>قواعد</td></tr>
+    <tr><td>23 أيار</td><td>عربي</td><td>نموذج وزاري</td><td>ملخصات</td><td>راحة</td></tr>
+  </table>
+
+  <div class="phase-title">المرحلة الثالثة: مراجعة نهائية وتحفيز نفسي</div>
+  <table>
+    <tr>
+      <th>التاريخ</th>
+      <th>المادة</th>
+      <th>9:00 - 12:00</th>
+      <th>2:00 - 5:00</th>
+      <th>7:00 - 9:00</th>
+    </tr>
+    <!-- جدول المرحلة الثالثة -->
+    <tr><td>24 أيار</td><td>علوم + اجتماعيات</td><td>مراجعة سريعة</td><td>خرائط وتواريخ</td><td>راحة</td></tr>
+    <tr><td>25 أيار</td><td>رياضيات</td><td>مسائل مختارة</td><td>نماذج مختصرة</td><td>راحة</td></tr>
+    <tr><td>26 أيار</td><td>ديانة</td><td>حفظ نهائي</td><td>نموذج سريع</td><td>راحة</td></tr>
+    <tr><td>27 أيار</td><td>إنكليزي</td><td>كلمات + تعابير</td><td>نصوص وفهم</td><td>راحة</td></tr>
+    <tr><td>28 أيار</td><td>فرنسي</td><td>قواعد خفيفة</td><td>نموذج سريع</td><td>راحة</td></tr>
+    <tr><td>29 أيار</td><td>عربي</td><td>قواعد</td><td>تعابير</td><td>راحة</td></tr>
+    <tr><td>30 أيار</td><td>الكل</td><td>مراجعة خفيفة</td><td>ترتيب ملخصات</td><td>راحة تامة</td></tr>
+    <tr><td>31 أيار</td><td>راحة</td><td>استرخاء</td><td>لا دراسة</td><td>نوم مبكر</td></tr>
+  </table>
+
 </body>
 </html>
